@@ -25,3 +25,5 @@ pipeline {
                 bat 'xcopy * C:\\xampp\\htdocs\\gaming101\\ /E /H /C /I /Y'
             }
         }
+    }
+}
