@@ -19,9 +19,9 @@ pipeline {
             }
         }
         stage('Deploy') {
-    steps {
-        echo 'Deploying Gaming101 files to XAMPP htdocs'
-        bat 'mkdir C:\\xampp\\htdocs\\gaming101 2>nul || echo Directory exists'
-        bat 'xcopy * C:\\xampp\\htdocs\\gaming101\\ /E /H /C /I /Y'
-    }
-}
+            steps {
+                echo 'Deploying Gaming101 files to XAMPP htdocs'
+                bat 'mkdir C:\\xampp\\htdocs\\gaming101 2>nul || echo Directory exists'
+                bat 'xcopy * C:\\xampp\\htdocs\\gaming101\\ /E /H /C /I /Y'
+            }
+        }
